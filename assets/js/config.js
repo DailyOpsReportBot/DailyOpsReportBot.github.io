@@ -4,6 +4,7 @@ window.DORB_SITE_CONFIG = {
   platform: "Windows Desktop",
   // Change this to your real GitHub Releases installer/ZIP URL.
   // Example: https://github.com/YOUR_USERNAME/DailyOpsReportBot/releases/latest/download/DailyOpsReportBot_Setup.exe
-  downloadUrl: "https://github.com/YOUR_USERNAME/DailyOpsReportBot/releases/latest",
+  // "https://github.com/YOUR_USERNAME/DailyOpsReportBot/releases/latest", 
+  downloadUrl: "https://github.com/DailyOpsReportBot/DailyOpsReportBot.github.io/releases/tag/v1.0.0"
   releaseNotesUrl: "https://github.com/YOUR_USERNAME/DailyOpsReportBot/releases/latest"
 };
