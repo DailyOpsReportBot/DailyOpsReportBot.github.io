@@ -4,6 +4,7 @@
 // Both formats below are supported:
 //   { label: "Client Name", hash: "64-character-sha256-hash" },
 //   "64-character-sha256-hash",
+
 window.DORB_DOWNLOAD_CODE_HASHES = [
   { label: "Client Code", hash: "e3c53babade5d90329b9ac43505aee1c309de03c984d3c26c8fd0d6b89dd9059" }, // DORB-N3WU-ZRTX-PN8P
   { label: "Client Code", hash: "f6dc8afb400e0b3c24713d9eb4d3fc80432ecc3cdb615562a5ffe871b7b39c16" }, // DORB-UYLG-KGUM-FCDE
