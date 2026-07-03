@@ -5,8 +5,5 @@
 //   { label: "Client Name", hash: "64-character-sha256-hash" },
 //   "64-character-sha256-hash",
 window.DORB_DOWNLOAD_CODE_HASHES = [
-  { label: "Starter Code 1", hash: "7e0663bcee233c453aef16de64eaa3d91ff5b58222adb4fae1f5293d9a868324" },
-  { label: "Starter Code 2", hash: "a5bbc59f842ac2d279957a9f03b6241dd3734d858296efc48fd54095f76667ac" },
-  { label: "Starter Code 3", hash: "2dfcb19e767d5ce18fe37e65d23def5aae242f81bac9d0ee3c8c149ec21d0ef5" },
-  { label: "Client Code", hash: "2f5ff588f6a38a08392a6aeb8c42f8eaa32b7b843270fb1c46025b9633ba3ace" }
+  { label: "Client Code", hash: "e3c53babade5d90329b9ac43505aee1c309de03c984d3c26c8fd0d6b89dd9059" } // DORB-N3WU-ZRTX-PN8P
 ];
