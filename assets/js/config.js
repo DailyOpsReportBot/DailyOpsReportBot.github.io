@@ -12,6 +12,6 @@ window.DORB_SITE_CONFIG = {
   // Option 1: set requestAccessEmail to your business email to open a prefilled email request.
   // Option 2: set requestAccessSubmitUrl to a static-form endpoint such as FormSubmit.
   // Example FormSubmit URL: https://formsubmit.co/YOUR_EMAIL@example.com
-  requestAccessEmail: "DailyOpsReportBot@gmail.com",
-  requestAccessSubmitUrl: ""
+  requestAccessEmail: "",
+  requestAccessSubmitUrl: "https://formsubmit.co/DailyOpsReportBot@gmail.com"
 };
