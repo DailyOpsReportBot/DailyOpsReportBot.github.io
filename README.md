@@ -95,3 +95,9 @@ Your site will publish to your GitHub Pages URL.
 The Pricing page now opens a tier-specific Request Access form instead of sending visitors directly to the download page. The form asks for Name, Business Name, and Email Address, and automatically includes a message saying the visitor is interested in purchasing the selected package.
 
 Configure where requests go in `assets/js/config.js` by setting either `requestAccessEmail` for a prefilled email request or `requestAccessSubmitUrl` for a static-form service such as FormSubmit. See `REQUEST_ACCESS_SETUP.md`.
+
+## Request Access FormSubmit Configuration
+
+The Pricing page Request Access form is configured to submit to FormSubmit at `https://formsubmit.co/DailyOpsReportBot@gmail.com`.
+
+After publishing, submit one test request from the live Pricing page and confirm the activation email if FormSubmit sends one.
