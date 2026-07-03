@@ -10,6 +10,8 @@
   const nameField = document.getElementById('requestName');
   const businessField = document.getElementById('requestBusiness');
   const emailField = document.getElementById('requestEmail');
+  const replyToField = document.getElementById('requestReplyTo');
+  const defaultRequestAccessSubmitUrl = 'https://formsubmit.co/DailyOpsReportBot@gmail.com';
 
   if(!modal || !form) return;
 
@@ -84,6 +86,7 @@
     const tier = clean(tierHidden.value);
     const price = clean(priceHidden.value);
     const message = clean(messageField.value);
+    if(replyToField) replyToField.value = email;
 
     if(!name || !business || !email){
       showError('Please complete Name, Business Name, and Email Address before sending the request.');
@@ -97,10 +100,14 @@
     }
 
     const config = window.DORB_SITE_CONFIG || {};
-    const submitUrl = clean(config.requestAccessSubmitUrl);
+    let submitUrl = clean(config.requestAccessSubmitUrl);
     const requestEmail = clean(config.requestAccessEmail);
 
-    if(submitUrl && !submitUrl.includes('YOUR_EMAIL') && !submitUrl.includes('example.com')){
+    if(!submitUrl || submitUrl.includes('YOUR_EMAIL') || submitUrl.includes('example.com')){
+      submitUrl = defaultRequestAccessSubmitUrl;
+    }
+
+    if(submitUrl){
       form.action = submitUrl;
       form.method = 'POST';
       form.submit();
