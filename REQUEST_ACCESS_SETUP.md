@@ -64,3 +64,13 @@ GitHub Pages is static hosting. It does not process form submissions by itself. 
 
 - `mailto:` through `requestAccessEmail`, or
 - a form service endpoint through `requestAccessSubmitUrl`.
+
+## Configured FormSubmit Endpoint
+
+This website package is configured to send Pricing page Request Access submissions to:
+
+```text
+https://formsubmit.co/DailyOpsReportBot@gmail.com
+```
+
+On the first live submission, FormSubmit may send an activation email to DailyOpsReportBot@gmail.com. Open that email and confirm the form so future submissions are delivered.
