@@ -89,3 +89,9 @@ For stronger protection, use one of these options:
 7. Save.
 
 Your site will publish to your GitHub Pages URL.
+
+## Pricing Request Access Form
+
+The Pricing page now opens a tier-specific Request Access form instead of sending visitors directly to the download page. The form asks for Name, Business Name, and Email Address, and automatically includes a message saying the visitor is interested in purchasing the selected package.
+
+Configure where requests go in `assets/js/config.js` by setting either `requestAccessEmail` for a prefilled email request or `requestAccessSubmitUrl` for a static-form service such as FormSubmit. See `REQUEST_ACCESS_SETUP.md`.
