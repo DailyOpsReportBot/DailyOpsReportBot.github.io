@@ -24,12 +24,47 @@
 <main id="main">
 <section class="page-hero"><div class="container"><span class="breadcrumb">Home / Pricing</span><h1>Simple packages for growing businesses.</h1><p>Start with the core tools and move into barcode and advanced operations control as the business grows.</p></div></section>
 <section class="content"><div class="container pricing">
-  <div class="price-card"><h3>Basic</h3><div class="price">$49<span>/month</span></div><p>For businesses moving away from spreadsheets.</p><ul><li>Inventory tracking</li><li>Orders and invoices</li><li>User management</li><li>Daily reports</li><li>Setup wizard</li><li>Backup and restore</li></ul><a class="btn secondary full" href="download.html">Request Access</a></div>
-  <div class="price-card featured"><span class="price-badge">Popular</span><h3>Intermediate</h3><div class="price">$89<span>/month</span></div><p>For businesses ready to use barcode workflows.</p><ul><li>Everything in Basic</li><li>Inventory barcodes</li><li>Barcode printing</li><li>Order barcode scanning</li><li>Faster item entry</li><li>Reduced typing mistakes</li></ul><a class="btn full" href="download.html">Request Access</a></div>
-  <div class="price-card"><h3>Advanced</h3><div class="price">$169<span>/month</span></div><p>For businesses that want stronger control.</p><ul><li>Everything in Intermediate</li><li>Advanced dashboard</li><li>Forecasting</li><li>Approvals</li><li>Purchase orders</li><li>Reorder automation</li></ul><a class="btn secondary full" href="download.html">Request Access</a></div>
+  <div class="price-card"><h3>Basic</h3><div class="price">$49<span>/month</span></div><p>For businesses moving away from spreadsheets.</p><ul><li>Inventory tracking</li><li>Orders and invoices</li><li>User management</li><li>Daily reports</li><li>Setup wizard</li><li>Backup and restore</li></ul><button class="btn secondary full" type="button" data-request-access data-tier="Basic" data-price="$49/month">Request Access</button></div>
+  <div class="price-card featured"><span class="price-badge">Popular</span><h3>Intermediate</h3><div class="price">$89<span>/month</span></div><p>For businesses ready to use barcode workflows.</p><ul><li>Everything in Basic</li><li>Inventory barcodes</li><li>Barcode printing</li><li>Order barcode scanning</li><li>Faster item entry</li><li>Reduced typing mistakes</li></ul><button class="btn full" type="button" data-request-access data-tier="Intermediate" data-price="$89/month">Request Access</button></div>
+  <div class="price-card"><h3>Advanced</h3><div class="price">$169<span>/month</span></div><p>For businesses that want stronger control.</p><ul><li>Everything in Intermediate</li><li>Advanced dashboard</li><li>Forecasting</li><li>Approvals</li><li>Purchase orders</li><li>Reorder automation</li></ul><button class="btn secondary full" type="button" data-request-access data-tier="Advanced" data-price="$169/month">Request Access</button></div>
 </div></section>
 <section><div class="container grid-2"><div class="card"><h3>Optional setup services</h3><p>Initial setup, inventory import assistance, custom report changes, and additional business locations can be handled separately.</p></div><div class="card"><h3>Annual billing</h3><p>Annual pricing can be offered for businesses that want a lower total yearly cost and simpler billing.</p></div></div></section>
 </main>
+
+<div class="modal-backdrop" id="requestAccessModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="requestAccessTitle">
+    <button class="modal-close" type="button" data-request-close aria-label="Close request access form">×</button>
+    <span class="badge">Request Access</span>
+    <h2 id="requestAccessTitle">Request access</h2>
+    <p class="modal-intro">Complete the form below and we will follow up about the selected package.</p>
+    <form id="requestAccessForm" class="request-form" novalidate>
+      <input type="hidden" name="_subject" id="requestSubject" value="Daily Ops Report Bot access request">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="Selected Tier" id="requestTierHidden" value="">
+      <input type="hidden" name="Selected Price" id="requestPriceHidden" value="">
+
+      <label for="requestName">Name <span aria-hidden="true">*</span></label>
+      <input class="input" id="requestName" name="Name" type="text" autocomplete="name" required>
+
+      <label for="requestBusiness">Business Name <span aria-hidden="true">*</span></label>
+      <input class="input" id="requestBusiness" name="Business Name" type="text" autocomplete="organization" required>
+
+      <label for="requestEmail">Email Address <span aria-hidden="true">*</span></label>
+      <input class="input" id="requestEmail" name="Email" type="email" autocomplete="email" required>
+
+      <label for="requestMessage">Message</label>
+      <textarea class="input" id="requestMessage" name="Message" readonly></textarea>
+
+      <p class="form-note">Required fields are marked with an asterisk. Your information will only be used to respond to this access request.</p>
+      <div class="error" id="requestAccessError" role="alert"></div>
+      <div class="modal-actions">
+        <button class="btn" type="submit">Send Request</button>
+        <button class="btn secondary" type="button" data-request-close>Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -45,6 +80,8 @@
   </div>
 </footer>
 <script src="assets/js/site.js"></script>
+<script src="assets/js/config.js?v=20260703"></script>
+<script src="assets/js/request-access.js?v=20260703"></script>
 
 </body>
 </html>
